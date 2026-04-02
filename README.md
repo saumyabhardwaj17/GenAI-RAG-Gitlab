@@ -9,10 +9,10 @@ A Retrieval-Augmented Generation chatbot built with **Streamlit**, **ChromaDB**,
 ├── app.py                  # Streamlit UI
 ├── rag_pipeline.py         # Ingestion, retrieval, and generation logic
 ├── evaluate.py             # Golden dataset evaluation script
-├── golden_dataset.json     # 10 Q&A pairs (1 negative example)
+├── golden_dataset.json     # 8 Q&A pairs (1 negative example)
 ├── requirements.txt
-├── Gitlab/                 # ← place your markdown files here
-└── chroma_db/              # ← auto-created after first ingest
+├── Gitlab/                 # markdown files here
+└── chroma_db/              # auto-created after first ingest
 ```
 
 ## Setup & Run
@@ -30,13 +30,12 @@ streamlit run app.py
 ## First-time use
 
 1. Enter your **Gemini API key** in the sidebar.
-2. Click **"🔨 Build / Refresh DB"** — this parses all markdown files and builds ChromaDB (~5 min).
+2. Click **"Rebuild Knowledge Base"** — this parses all markdown files and builds ChromaDB (~5 min).
 3. Start chatting! The DB is persisted to `chroma_db/` so you only need to build it once.
 
 ## Evaluation
 
 ```bash
-export GEMINI_API_KEY=your_key
 python evaluate.py
 # Results saved to test_results.json
 ```
@@ -48,7 +47,7 @@ python evaluate.py
 | ChromaDB `all-MiniLM-L6-v2` | Fast local embeddings, no API cost |
 | Cosine similarity threshold = 0.35 | Filters weak matches; prevents hallucination |
 | Chunk size 800 chars / 150 overlap | Balances context richness vs retrieval precision |
-| Gemini 1.5 Flash | Fast, cheap, generous context window |
+| Gemma model | Fast, cheap, generous context window |
 | Streamlit | Simple to run locally and deploy |
 
 ## Deployment (Hugging Face Spaces)
