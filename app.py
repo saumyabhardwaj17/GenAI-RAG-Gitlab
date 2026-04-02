@@ -117,7 +117,7 @@ with st.sidebar:
         st.session_state.messages = []
         st.rerun()
     st.divider()
-    st.markdown("**About**\n\nRAG chatbot over the GitLab Handbook using ChromaDB + Gemini.")
+    st.markdown("**About**\n\nRAG chatbot over the GitLab Handbook using ChromaDB + Gemini.\n By: Saumya Bhardwaj")
 
 # Init 
 @st.cache_resource(show_spinner="Loading vector database…")
