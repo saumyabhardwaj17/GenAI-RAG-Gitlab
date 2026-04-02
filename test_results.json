@@ -1,0 +1,155 @@
+{
+  "summary": {
+    "run_timestamp": "2026-03-31T22:36:40.404399",
+    "model_used": "gemma-3-27b-it",
+    "total_questions": 8,
+    "pass_count": 7,
+    "partial_or_fail": 1,
+    "error_count": 0,
+    "pass_rate_pct": 87.5,
+    "avg_correctness": 2.62,
+    "avg_faithfulness": 3.0,
+    "max_score_per_metric": 3
+  },
+  "results": [
+    {
+      "id": 1,
+      "question": "What is the GitLab Handbook?",
+      "expected": "The GitLab Handbook is the single source of truth for how GitLab operates, including processes, policies, and product direction. It is publicly accessible to promote transparency.",
+      "is_negative": false,
+      "chatbot_answer": "The GitLab Handbook is the single source of truth for how GitLab operates, including processes, policies, and product direction. It specifically refers to content in the `/handbook/` namespace of the handbook.gitlab.com website. It is entirely open to the world.",
+      "sources": [
+        "about_direction.md",
+        "about_maintenance.md",
+        "about_handbook-usage.md"
+      ],
+      "scores": {
+        "correctness": 3,
+        "faithfulness": 3,
+        "reasoning": "The chatbot's answer accurately reflects the reference answer and adds a helpful detail about the website namespace, without introducing any inaccuracies.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": 2,
+      "question": "Who uses the GitLab Handbook?",
+      "expected": "The GitLab Handbook is used by team members, leadership, potential applicants, and current or potential users to understand processes, company values, and product direction.",
+      "is_negative": false,
+      "chatbot_answer": "GitLab team members and leadership use the GitLab Handbook. Additionally, members of leadership teams outside of GitLab may use it.",
+      "sources": [
+        "about_direction.md",
+        "about_handbook-usage.md",
+        "ceo_shadow.md",
+        "company_culture_all-remote_asynchronous.md"
+      ],
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 3,
+        "reasoning": "The chatbot's answer is mostly correct, covering team members and leadership, but omits potential applicants and users mentioned in the reference.",
+        "verdict": "PARTIAL"
+      }
+    },
+    {
+      "id": 3,
+      "question": "What does 'handbook-first' mean at GitLab?",
+      "expected": "Working handbook-first means prioritizing documentation in the handbook to enable asynchronous collaboration and ensure knowledge is accessible and up to date.",
+      "is_negative": false,
+      "chatbot_answer": "The handbook states to practice handbook first. It means to actively contribute to the handbook, start with a merge request, and provide links to information from the handbook. More information can be found in the [why handbook first](/handbook/about/handbook-usage/#why-handbook-first) section.",
+      "sources": [
+        "about_handbook-usage.md",
+        "about_direction.md",
+        "company_culture_all-remote_guide_design.md"
+      ],
+      "scores": {
+        "correctness": 3,
+        "faithfulness": 3,
+        "reasoning": "The chatbot's answer accurately reflects the reference answer and provides a direct link to the relevant handbook section, demonstrating strong grounding.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": 4,
+      "question": "What are the methods available to update a team page entry?",
+      "expected": "The three methods are: using the Web IDE on GitLab.com, using the web interface, or using a local Git clone with a terminal and IDE.",
+      "is_negative": false,
+      "chatbot_answer": "There are three ways to update the website:\n\n1. Add your info on GitLab.com using the Web IDE.\n2. Add your info on GitLab.com using the 'web interface'.\n3. Add your info using a Local Git clone.",
+      "sources": [
+        "about_editing-handbook_edit-team-page.md"
+      ],
+      "scores": {
+        "correctness": 3,
+        "faithfulness": 3,
+        "reasoning": "The chatbot's answer accurately reflects the methods described in the reference answer, with only minor phrasing differences.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": 5,
+      "question": "When should a handbook issue be escalated?",
+      "expected": "Issues should be escalated if they involve a broken default branch, broken infrastructure, or time-sensitive updates that cannot be completed normally.",
+      "is_negative": false,
+      "chatbot_answer": "Issues should be escalated if it relates to:\n\n1. Default branch being broken\n2. Broken infrastructure\n3. Time sensitive updates to the handbook where there is an issue in making the update.",
+      "sources": [
+        "about_handbook-usage.md",
+        "about_escalation.md",
+        "company_culture_all-remote_being-a-great-remote-manager.md"
+      ],
+      "scores": {
+        "correctness": 3,
+        "faithfulness": 3,
+        "reasoning": "The chatbot's answer accurately reflects the information provided in the reference answer, presenting the same conditions for escalation.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": 6,
+      "question": "What is asynchronous work according to the handbook?",
+      "expected": "Asynchronous work involves completing tasks independently, documenting progress, and allowing others to continue work without requiring real-time communication.",
+      "is_negative": false,
+      "chatbot_answer": "According to Preston W. from the Remote blog, asynchronous work is: \u201cDo as much as you can with what you have, document everything, transfer ownership of the project to the next person, then start working on something else.\u201d",
+      "sources": [
+        "company_culture_all-remote_asynchronous.md"
+      ],
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 3,
+        "reasoning": "The chatbot provides a valid definition of asynchronous work, though it's slightly different phrasing than the reference, and correctly attributes the source.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": 7,
+      "question": "Why is documentation important for asynchronous communication?",
+      "expected": "Documentation is critical because it allows team members to find information without waiting for responses, reduces ambiguity, and enables efficient collaboration across time zones.",
+      "is_negative": false,
+      "chatbot_answer": "Documentation is important for asynchronous communication because it ensures that if someone has a follow-up question, they can look up the answer in the company handbook instead of waiting for a response. Asynchronous communication *is* documentation.",
+      "sources": [
+        "company_culture_all-remote_asynchronous.md"
+      ],
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 3,
+        "reasoning": "The chatbot's answer captures the core benefit of documentation in asynchronous communication, though it's less comprehensive than the reference and includes a slightly odd statement about asynchronous communication *being* documentation.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": 8,
+      "question": "What is GitLab's office address?",
+      "expected": "The provided context does not include any information about a physical office address, so this cannot be determined from the documents.",
+      "is_negative": false,
+      "chatbot_answer": "I don't know. The provided context states GitLab is an all-remote organization and discusses Slack channels for sharing location, but does not provide a physical office address.",
+      "sources": [
+        "communication_chat.md",
+        "about_escalation.md",
+        "company_culture_all-remote_building-culture.md"
+      ],
+      "scores": {
+        "correctness": 3,
+        "faithfulness": 3,
+        "reasoning": "The chatbot correctly identifies the lack of an office address in the context and accurately reflects the information provided, mirroring the reference answer.",
+        "verdict": "PASS"
+      }
+    }
+  ]
+}

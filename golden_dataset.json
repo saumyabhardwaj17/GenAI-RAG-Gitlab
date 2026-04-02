@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "question": "What is the GitLab Handbook?",
+    "expected_answer": "The GitLab Handbook is the single source of truth for how GitLab operates, including processes, policies, and product direction. It is publicly accessible to promote transparency.",
+    "category": "handbook_overview"
+  },
+  {
+    "id": 2,
+    "question": "Who uses the GitLab Handbook?",
+    "expected_answer": "The GitLab Handbook is used by team members, leadership, potential applicants, and current or potential users to understand processes, company values, and product direction.",
+    "category": "handbook_audience"
+  },
+  {
+    "id": 3,
+    "question": "What does 'handbook-first' mean at GitLab?",
+    "expected_answer": "Working handbook-first means prioritizing documentation in the handbook to enable asynchronous collaboration and ensure knowledge is accessible and up to date.",
+    "category": "handbook_principles"
+  },
+  {
+    "id": 4,
+    "question": "What are the methods available to update a team page entry?",
+    "expected_answer": "The three methods are: using the Web IDE on GitLab.com, using the web interface, or using a local Git clone with a terminal and IDE.",
+    "category": "editing_handbook"
+  },
+  {
+    "id": 5,
+    "question": "When should a handbook issue be escalated?",
+    "expected_answer": "Issues should be escalated if they involve a broken default branch, broken infrastructure, or time-sensitive updates that cannot be completed normally.",
+    "category": "escalation"
+  },
+  {
+    "id": 6,
+    "question": "What is asynchronous work according to the handbook?",
+    "expected_answer": "Asynchronous work involves completing tasks independently, documenting progress, and allowing others to continue work without requiring real-time communication.",
+    "category": "remote_work"
+  },
+  {
+    "id": 7,
+    "question": "Why is documentation important for asynchronous communication?",
+    "expected_answer": "Documentation is critical because it allows team members to find information without waiting for responses, reduces ambiguity, and enables efficient collaboration across time zones.",
+    "category": "remote_work_principles"
+  },
+  {
+    "id": 8,
+    "question": "What is GitLab's office address?",
+    "expected_answer": "The provided context does not include any information about a physical office address, so this cannot be determined from the documents.",
+    "category": "negative_example"
+  }
+]
