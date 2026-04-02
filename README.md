@@ -55,3 +55,6 @@ python evaluate.py
 1. Push all files including the `chroma_db/` folder to a HF Space (Streamlit SDK).
 2. Set `GEMINI_API_KEY` as a Space secret.
 3. The sidebar key field can then auto-read from `os.environ`.
+
+
+Made by Saumya Bhardwaj as part of LBS GenAI Assignment.
